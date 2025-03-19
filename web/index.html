@@ -3,34 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de ejemplo</title>
-    <link rel="icon" href="images/favicon.ico">
+    <title>Photo Gallery</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
 </head>
 
-<!-- Comentario, esto no aparece en el explorador -->
+<br>
 
-<body>
-    <form>
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Chanchito"/>
-        <br>
-        <label for="correo">Correo</label>
-        <input type="correo" id="correo" name="correo" placeholder="animalito@gmail.com"/>
-    </form>
+<body class="dark">
+    <h2>Recent pictures</h2>
+    <a href="upload_picture.html">Upload a new picture</a>
 
-    <br><br>
+    <br>
 
-    <div>Soy un parrafo dentro de un div</div>
-
-    <br><br>
+    <div class="gallery-container">
+        
+        <div class="photo-block">
+            <div class="photo-header-block">
+                <h2 class="photo-title">Samoyed</h2>
+                <h3 class="photo-score">Score: 4.52</h3>
+            </div>
     
-    <h1>Mi primer heading</h1> 
-    <p> Chanchito <span style="color:blue">feliz </span> está <br> muy feliz </p> <!--span hace una seleccion de texto para editarlo luego con css -->
-    <a target="_blank" href="https://google.com">Ir a google <br></a>
-    <img src="images/example.jpg" width="400"/>
-    <form>
-        <input />
-    </form>
+            <div class="photo-image-block">
+                <img class="photo-image" src="https://i.ibb.co/tY1Jcnc/wlZCfCv.jpg">
+            </div>
+            
+            <div class="photo-metadata-block">
+                <p class="photo-description">A very good boy.</p>
+            </div>
+    
+            <div class="photo-edit-block">
+                <button>Edit this photo</button>
+                <button>Delete this photo</button>
+            </div>
+        </div>
+
+            <!---->
+
+            <div class="photo-block">
+                <div class="photo-header-block">
+                    <h2 class="photo-title">Spanish tortilla</h2>
+                    <h3 class="photo-score">Score: 5.00</h3>
+                </div>
+        
+                <div class="photo-image-block">
+                    <img class="photo-image" src="https://www.recetasderechupete.com/wp-content/uploads/2020/11/Tortilla-de-patatas-4-1200x828.jpg">
+                </div>
+                
+                <div class="photo-metadata-block">
+                    <p class="photo-description">With onion.</p>
+                </div>
+        
+                <div class="photo-edit-block">
+                    <button>Edit this photo</button>
+                    <button>Delete this photo</button>
+                </div>
+            </div>
+
+            <!---->
+
+            <div class="photo-block">
+                <div class="photo-header-block">
+                    <h2 class="photo-title">Seville</h2>
+                    <h3 class="photo-score">Score: 9.00</h3>
+                </div>
+        
+                <div class="photo-image-block">
+                    <img class="photo-image" src="https://s1.abcstatics.com/abc/www/multimedia/sevilla/2022/10/26/plaza-espana-sevilla-RGatPHKYapyCsuC8b7DAh8L-1240x768@abc.jpg">
+                </div>
+                
+                <div class="photo-metadata-block">
+                    <p class="photo-description">The beautiful city of Seville.</p>
+                </div>
+        
+                <div class="photo-edit-block">
+                    <button>Edit this photo</button>
+                    <button>Delete this photo</button>
+                </div>
+            </div>
+
+    </div>
+    
 </body>
 
 </html>
